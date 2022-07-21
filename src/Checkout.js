@@ -10,12 +10,12 @@ export const Checkout = () => {
     return (
         <div className='checkout'>
             <div className='checkout_left'>
-                <img className='checkout_ad' src='https://images-eu.ssl-images-amazon.com/images/G/31/img17/AmazonPay/PDAYILM/v1/01.jpg' alt='' />
+                <img className='checkout_ad' src='https://images-eu.ssl-images-amazon.com/images/G/31/img17/AmazonPay/PDAYILM/v1/01.jpg' alt='ad' />
 
                 <div>
                     <h3>Hello, {user?.email}</h3>
                     <h2 className='checkout_title'>
-                        {/* <CheckoutProduct/> */}
+                        <h3>Your Shopping Bag</h3>
                     </h2>
                     {
                         basket.map(item => 

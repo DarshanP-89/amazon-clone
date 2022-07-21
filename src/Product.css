@@ -42,3 +42,12 @@
     margin-bottom: 4rem;
     /* flex: 0.5; */
 }
+
+.product:hover {
+    transform: translateY(-10px);
+    transform: translate(-12px, -40px) rotate(deg) scale(1.5);
+    transform: scale(1.05);
+    transition: 0.25s;
+    transition-delay: 0.25s;
+}
+
