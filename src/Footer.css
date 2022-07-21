@@ -1,0 +1,43 @@
+*{
+    padding: 0;
+    margin: 0;
+}
+
+.footer{
+    height: 20%;
+    background-color: #000e1c;
+    width: 100%;
+    padding: 5px;
+}
+.footer_container{
+    display: flex;
+    padding: 10px;
+    justify-content: center;
+}
+.row_container{
+    display: flex;
+    align-items: center;
+    text-align: center;
+}
+
+.row{
+    padding: 0px 20px;
+}
+.list-container{
+    display: flex;
+}
+.list_item{
+    padding: 5px 10px;
+    text-align: left;
+}
+.list_name{
+    list-style: none;
+    color: white;
+}
+.list_menu{
+    color: rgb(210, 231, 248);
+    max-width: 120px;
+    font-size: 12px;
+    opacity: .8;
+}
+
