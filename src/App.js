@@ -7,17 +7,18 @@ import React, { useEffect, useState } from 'react';
 import Login from './Login';
 import { auth } from './firebase';
 import useStateValue from './Stateprovider';
+import Payment from './Payment';
 
 
 function App() {
 
-  const [{}, dispatch] = useStateValue();
+  const [{ }, dispatch] = useStateValue();
 
-  useEffect(()=> {
+  useEffect(() => {
     auth.onAuthStateChanged(authUser => {
-      console.log('The user is',authUser);
+      console.log('The user is', authUser);
 
-      if(authUser){
+      if (authUser) {
         dispatch({
           type: 'SET_USER',
           user: authUser
@@ -39,15 +40,19 @@ function App() {
         <div className="App">
           <Switch>
             <Route exact path='/login'>
-              <Login/>
+              <Login />
             </Route>
-            <Route exact path='/'>
+            <Route exact path='/checkout'>
               <Header />
-              <Home/>
+              <Checkout />
             </Route>
-            <Route path='/checkout'>
+            <Route exact path='/payment'>
               <Header />
-              <Checkout/>
+              <Payment />
+            </Route>
+            <Route path='/'>
+              <Header />
+              <Home />
             </Route>
           </Switch>
         </div>
