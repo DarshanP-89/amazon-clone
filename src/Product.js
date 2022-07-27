@@ -42,7 +42,10 @@ function Product({ id, title, price, rating, image }) {
 
       <img src={image} alt='' />
 
+
       <button onClick={addToBasket}>Add to Cart</button>
+
+
     </div>
   );
 }
